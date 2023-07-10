@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <form action="">
+        <fieldset class="reg-box">
+            <legend class="form-title">Register Form</legend>
+            <div class="form-group">
+                <label for="name" class="form-label">
+                    <i class="fa-solid fa-fw fa-user mr-sm"></i>Your Name: </label>
+                <input type="text" class="form-input" name="name" id="name">
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">
+                    <i class="fa-solid fa-fw fa-envelope mr-sm"></i>Your Email: </label>
+                <input type="email" class="form-input" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">
+                    <i class="fa-solid fa-fw fa-lock mr-sm"></i>Your Password: </label>
+                <input type="password" class="form-input" name="password" id="password">
+            </div>
+            <div class="form-group">
+                <label for="position" class="form-label">
+                    <i class="fa-solid fa-fw fa-briefcase mr-sm"></i>Apply Position: </label>
+                <select class="form-select" name="position" id="position">
+                    <option value="frontend">Frontend Developer</option>
+                    <option value="backend">Backend Developer</option>
+                    <option value="fullstack">Fullstack Developer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">
+                    <i class="fa-solid fa-fw fa-cogvmr-sm"></i>Select Your Skills: </label>
+                    <div class="form-checkbox form-checkbox-inline">
+                        <input type="checkbox" name="html" id="html" value="html">
+                        <label for="html">HTML</label>
+                    </div>
+                    <div class="mb form-checkbox form-checkbox-inline">
+                        <input type="checkbox" name="css" id="css" value="css">
+                        <label for="css">CSS</label>
+                    </div>
+                    <div class="form-checkbox form-checkbox-inline">
+                        <input type="checkbox" name="javascript" id="javascript" value="javascript">
+                        <label for="javascript">Javascript</label>
+                    </div>
+                    <div class="form-checkbox form-checkbox-inline">
+                        <input type="checkbox" name="python" id="python" value="python">
+                        <label for="python">Python</label>
+                    </div>
+                    <button class="reg-btn btn btn-dark"> <i class="fa-solid fa-play mr-sm"></i> Register</button>
+                    
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

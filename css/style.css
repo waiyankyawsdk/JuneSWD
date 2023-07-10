@@ -1,0 +1,485 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Padauk:wght@400;700&family=Raleway:wght@300;400;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+/* fonts 
+heading fonts
+body (base) fonts
+Display fonts
+*/
+
+/* color
+primary
+secondary
+accent
+status*/
+:root{
+    --primary : #28c7fa;
+    --secondary : #775ada;
+    --danger : #ff304f;
+    --dark : black;
+    --body-font : 'Raleway', 'Padauk', sans-serif
+}
+* {
+    padding : 0;
+    margin : 0;
+    font-family: var(--body-font);
+}
+
+body{
+    padding : 20px;
+
+}
+.title{
+    margin-bottom: 20px;
+}
+
+.sub-titile{
+    margin-bottom: 10px;
+}
+
+.box{
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.rounded-circle{
+    border-radius: 50%;
+}
+
+.rounded-pill{
+    border-radius: 10px;
+}
+
+/* button css */
+.btn {
+    padding : 10px 20px;
+    color : white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition:background-color 0.5s;
+}
+.btn-primary{
+    background-color: var(--primary);
+    border : 2px solid var(--primary);
+}
+
+.btn-secondary{
+    background-color: var(--secondary);
+    border : 2px solid var(--secondary);
+}
+
+.btn-danger{
+    background-color: var(--danger);
+    border : 2px solid var(--danger);
+}
+
+.btn-dark{
+    background-color: var(--dark);
+    border: 2px solid var(--dark);
+}
+
+.btn-dark:hover{
+    background-color: white;
+    color : black;
+}
+.btn-outline{
+    padding : 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: transparent;
+    transition: background-color 0.5s;
+}
+
+.btn-outline:hover{
+    background-color: var(--primary);
+    color: white;
+}
+.btn-outline-primary{
+    color: var(--primary);
+    border : 2px solid var(--primary);
+}
+
+.btn-outline-secondary{
+    color: var(--secondary);
+    border : 2px solid var(--secondary);
+}
+
+.btn-outline-danger{
+    color: var(--danger);
+    border : 2px solid var(--danger);
+}
+
+.btn-outline-dark{
+    color : black;
+    border : 2px solid black;
+}
+
+.btn-icon{
+    height: 50.5px;
+    aspect-ratio: 1/1;
+    padding : 10px;
+}
+
+/* table CSS */
+table {
+    width : 100%;
+    border : 1px solid black;
+    border-collapse: collapse;
+}
+
+table th{
+    text-align: left;
+}
+
+table tr{
+    vertical-align: top;
+}
+
+td:nth-child(4){
+    text-align: right;
+}
+
+table th,td{
+    border : 1px solid var(--dark);
+    padding : 10px 20px;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.align-top{
+    vertical-align: top;
+}
+
+.align-middle{
+    vertical-align: middle;
+}
+
+.align-bottom{
+    vertical-align: bottom;
+}
+
+.mb{
+    margin-bottom: 20px;
+}
+
+.mr{
+    margin-right: 20px;
+}
+
+.mr-sm{
+    margin-right: 10px;
+}
+
+.table-borderless{
+    border : none;
+}
+
+.table-borderless th,.table-borderless td {
+    border : none;
+}
+
+.table-strip thead{
+    background-color: var(--secondary);
+    color :white;
+}
+
+.table-strip tbody tr:nth-child(even){
+    background-color: var(--primary);
+}
+
+table tbody tr:hover{
+    background-color: gray !important;
+}
+
+/* for print */
+@media print{
+
+}
+
+/* list css */
+.html-list {
+    list-style-type: square;
+}
+
+.html-list li{
+
+}
+
+.list-group {
+    list-style-type: none;
+}
+
+.list-group li{
+    border : 1px solid black;
+    padding : 10px;
+}
+
+.list-group li:first-child{
+    background-color: var(--primary);
+    border-radius: 5px 5px 0 0;
+}
+
+.list-group li:last-child{
+    background-color: var(--secondary);
+    border-radius: 0 0 5px 5px;
+}
+
+.list-group li:hover{
+    background-color: bisque;
+}
+
+.list-group li.active{
+    background-color: #ff304f;
+}
+
+.nav-list{
+    list-style-type: none;
+}
+
+.nav-list li{
+    /* border : 1px solid black; */
+    padding : 10px 20px;
+    display: inline-block;
+}
+
+.nav-list li.active{
+    /* border-bottom : 5px solid black; */
+    background-color: #fff0ff;
+
+}
+@media screen and (max-width: 540px){
+    .nav-list li{
+        display: block;
+    }
+}
+
+.card{
+    border : 1px solid black;
+    width: 300px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.card-img{
+    width : 100%;
+}
+
+.card-body{
+    padding : 20px;
+}
+
+.card-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card-text{
+    color : #606060;
+    line-height: 20px;
+}
+
+.product-card{
+    margin-left: 10px;
+    border : none;
+}
+
+.product-card .card-img{
+    border-radius: 10px;
+}
+
+.product-card .stars{
+    display: inline-block;
+    color : orange;
+}
+
+.product-card .rating{
+    display: inline-block;
+}
+.product-card .stars .fa-stars{
+    font-size: 30px;
+}
+
+.product-card .product-card-price{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.add-cart-btn{
+    display: block;
+    width : 100%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.discount-price{
+    font-size: 25px;
+    text-decoration: line-through;
+}
+
+.product-card-design{
+    border : none;
+    border-radius: 10px;
+    background-color: var(--primary);
+    transition: 0.5s;
+}
+
+.product-card-design:hover{
+    box-shadow: 0 10px 15px rgba(128, 128, 128, 0.504);
+    margin-bottom: 10px;
+    transform: translateY(-10px);
+}
+
+.product-card-design:hover .product-img{
+    transform: rotate(-31deg);
+}
+.product-card-design .product-img{
+    display: block;
+    margin : auto;
+    margin-top: -60px;
+    width : 70%;
+    transform: rotate(-25deg);
+    transition: 0.5s;
+}
+
+.product-card-design .product-shadow{
+    display: block;
+    margin : auto;
+    width: 70%;
+    margin-top : 10px;
+}
+
+.product-card-design .card-title{
+    color : var(--dark);
+}
+
+.product-card-design .stars{
+    color : white;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.product-card-design .rating{
+    display: inline-block;
+    font-weight: bold;
+}
+
+.product-card-design .card-text{
+    color : rgb(74,74,74);
+    margin-bottom: 10px;
+}
+.reg-box{
+    width : 400px;
+    margin : 10px auto;
+    padding : 30px;
+    border-radius: 10px;
+    border : 2px solid black;
+    box-sizing: border-box;
+}
+
+.form-title{
+    color : black;
+    font-size : 20px;
+    font-weight: bold;
+    padding : 0 10px;
+}
+
+.form-label{
+    font-size: 18px;
+    margin-bottom : 10px;
+    display : block;
+
+}
+
+.form-input{
+    display : block;
+    width : 100%;
+    height : 40px;
+    border : 1px solid black;
+    border-radius: 5px;
+    box-sizing : border-box;
+    padding : 0 10px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-select{
+    display : block;
+    width : 100%;
+    height : 40px;
+    border : 1px solid black;
+    border-radius: 5px;
+    box-sizing : border-box;
+    padding : 0 10px;
+    appearance: none;
+    background-image: url('/images/square-caret-down-solid.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+}
+
+.form-checkbox{
+    accent-color: black;
+    margin-bottom: 5px;
+}
+
+.form-checkbox-inline{
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.form-checkbox:focus-within{
+    background-color: rgba(128, 128, 128, 0.504);
+}
+.form-checkbox label{
+    font-size: 20px;
+}
+.form-checkbox input{
+    width : 20px;
+    height: 20px;
+    border : 1px solid black;
+    border-radius: 5px;
+    appearance: none;
+    vertical-align: middle;
+    transition:background-color 0.5s;
+}
+
+.form-checkbox input:checked{
+    background-color: black;
+    background-image: url('/images/check-solid.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+input:focus-visible, select:focus-visible{
+    outline: none;
+    border : 1px solid orange;
+}
+.reg-btn{
+    display: block;
+    width : 100%;
+    height: 50px;
+}
+
+.reg-btn:hover{
+    transform: translateY(-3px);
+    transition: 0.6s;
+}
